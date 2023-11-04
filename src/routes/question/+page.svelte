@@ -18,12 +18,12 @@
 
   function submitAnswers() {
     console.log($answers);
-    goto('/thank-you'); // Pagina de gracias
+    //goto('/thank-you'); // Pagina de gracias
   }
 </script>
 
 {#if !isSubmitted}
-  <div>
+  <div class="questionnaire-container">
     {#if questions[currentQuestionIndex].type === 'demographic'}
       <DemographicQuestion question={questions[currentQuestionIndex]} />
     {:else if questions[currentQuestionIndex].type === 'image'}
@@ -32,13 +32,21 @@
     <button on:click={nextQuestion}>Next</button>
   </div>
 {:else}
-  <div>
+  <div class="questionnaire-container">
     <h1>Gracias por completar el test!</h1>
     <button on:click={submitAnswers}>Enviar respuesta</button>
   </div>
 {/if}
 
 <style>
+  .questionnaire-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use full screen height to center vertically */
+  }
+
   button {
     padding: 0.6rem 1.2rem;
     margin-top: 1rem;
