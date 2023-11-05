@@ -2,11 +2,17 @@
   import { questions } from '../../lib/questions';
   import DemographicQuestion from '../../components/DemographicQuestion.svelte';
   import ImageQuestion from '../../components/ImageQuestion.svelte';
+  import RageQuestion from '../../components/RageQuestion.svelte';
   import { answers } from '../../lib/store.js';
+  import { skipRageStore } from '$lib/store.js';
   import { goto } from '$app/navigation';
-
+  
   let currentQuestionIndex = 0;
   let isSubmitted = false;
+
+  $: if ($skipRageStore) {
+    currentQuestionIndex = questions.findIndex((q) => q.type !== 'rage');
+  }
 
   function nextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
@@ -28,8 +34,10 @@
       <DemographicQuestion question={questions[currentQuestionIndex]} />
     {:else if questions[currentQuestionIndex].type === 'image'}
       <ImageQuestion question={questions[currentQuestionIndex]} />
+    {:else if questions[currentQuestionIndex].type === 'rage'}
+      <RageQuestion question={questions[currentQuestionIndex]} />
     {/if}
-    <button on:click={nextQuestion}>Next</button>
+    <button on:click={nextQuestion}>Siguiente</button>
   </div>
 {:else}
   <div class="questionnaire-container">
@@ -60,10 +68,5 @@
 
   button:hover {
     background-color: #0056b3;
-  }
-
-  .thank-you {
-    text-align: center;
-    margin-top: 2rem;
   }
 </style>

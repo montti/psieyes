@@ -11,12 +11,15 @@
 
 <div>
   <h2>{question.question}</h2>
+  <p>{question.desc}</p>
+  {#if (question.options).length != 0}
   <select bind:value={selectedOption}>
     <option value="" disabled selected>Escoge una opción</option>
     {#each question.options as option}
       <option value={option}>{option}</option>
     {/each}
   </select>
+  {/if}
 </div>
 
 <style>

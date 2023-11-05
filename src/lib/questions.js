@@ -1,4 +1,10 @@
 export const questions = [
+    {
+    type: 'rage',
+    question: "Recuerda una situacion que te causo enojo.",
+    desc: "Lorem ipsum",
+    options: [],
+  },
   {
     type: 'demographic',
     question: "¿Cual es tu edad?",
