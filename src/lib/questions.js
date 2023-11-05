@@ -37,7 +37,7 @@ export const questions = [
   }, 
   {
     type: 'rage',
-    question: "¿Consideras que manejaste bien la situación en retrospectiva en retrospectiva?",
+    question: "¿Consideras que manejaste bien la situación en retrospectiva?",
     options: ['Bien', 'Podría haber sido mejor', 'Mal', 'Muy mal'],
   }, 
   {
