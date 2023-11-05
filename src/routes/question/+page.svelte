@@ -15,6 +15,7 @@
   }
 
   function nextQuestion() {
+
     if (currentQuestionIndex < questions.length - 1) {
       currentQuestionIndex += 1;
     } else {
@@ -35,7 +36,7 @@
     {:else if questions[currentQuestionIndex].type === 'image'}
       <ImageQuestion question={questions[currentQuestionIndex]} />
     {:else if questions[currentQuestionIndex].type === 'rage'}
-      <RageQuestion question={questions[currentQuestionIndex]} />
+      <RageQuestion question={questions[currentQuestionIndex]} selectedOption=null/>
     {/if}
     <button on:click={nextQuestion}>Siguiente</button>
   </div>

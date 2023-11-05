@@ -1,8 +1,13 @@
 <script>
   export let question;
   import { answers } from '../lib/store.js';
+  export { resetSelectedOption };
 
-  let selectedOption;
+  export let selectedOption;
+
+  function resetSelectedOption() {
+    selectedOption = null;
+  }
 
   $: if (selectedOption) {
     answers.update(current => ({ ...current, [question.question]: selectedOption }));
@@ -32,6 +37,17 @@
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    background-color: #0062cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
   }
 
   h2 {
