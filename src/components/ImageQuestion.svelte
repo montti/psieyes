@@ -1,16 +1,17 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
+
   export let question;
   import { answers } from '../lib/store.js';
-  export { resetSelectedOption };
 
   export let selectedOption;
 
-  function resetSelectedOption() {
-    selectedOption = null;
-  }
-
-  $: if (selectedOption) {
+  function selectOption(option) {
+    selectedOption = option;
     answers.update(current => ({ ...current, [question.question]: selectedOption }));
+    // Trigger next question (you need to implement this)
+    dispatch('nextquestion');
   }
 </script>
 
@@ -18,10 +19,7 @@
   <img src={question.image} alt={`Question image for "${question.question}"`} />
   <h2>{question.question}</h2>
   {#each question.options as option}
-    <label>
-      <input type="radio" bind:group={selectedOption} value={option} />
-      {option}
-    </label>
+    <button on:click={() => selectOption(option)}>{option}</button>  
   {/each}
 </div>
 
@@ -31,6 +29,7 @@
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
+    text-align: center;
   }
 
   img {
@@ -42,6 +41,7 @@
   button {
     padding: 0.6rem 1.2rem;
     margin-top: 1rem;
+    margin-right: 1rem;
     background-color: #0062cc;
     color: white;
     border: none;
@@ -63,4 +63,5 @@
   input[type='radio'] {
     margin-right: 0.5rem;
   }
+
 </style>

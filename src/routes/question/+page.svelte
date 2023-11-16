@@ -27,18 +27,23 @@
     console.log($answers);
     //goto('/thank-you'); // Pagina de gracias
   }
+
+  function handleNextQuestion() {
+    nextQuestion();
+  }
 </script>
 
 {#if !isSubmitted}
   <div class="questionnaire-container">
     {#if questions[currentQuestionIndex].type === 'demographic'}
       <DemographicQuestion question={questions[currentQuestionIndex]} />
+      <button on:click={nextQuestion}>Siguiente</button>
     {:else if questions[currentQuestionIndex].type === 'image'}
-      <ImageQuestion question={questions[currentQuestionIndex]} />
+      <ImageQuestion question={questions[currentQuestionIndex]} on:nextquestion={handleNextQuestion}/>
     {:else if questions[currentQuestionIndex].type === 'rage'}
       <RageQuestion question={questions[currentQuestionIndex]} selectedOption=null/>
+      <button on:click={nextQuestion}>Siguiente</button>
     {/if}
-    <button on:click={nextQuestion}>Siguiente</button>
   </div>
 {:else}
   <div class="questionnaire-container">
