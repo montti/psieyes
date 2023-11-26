@@ -43,7 +43,7 @@ export const questions = [
   {
     type: 'demographic',
     question: "¿Cual es tu edad?",
-    options: ['Bajo 18', '18-24', '25-34', '35-44', '45-54', '55-64', '65 o mas'],
+    options: ['18-24', '25-34', '35-44', '45-54', '55-64', '65 o mas'],
   },
   {
     type: 'demographic',
