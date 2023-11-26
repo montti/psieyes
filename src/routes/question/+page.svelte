@@ -48,7 +48,7 @@
 {:else}
   <div class="questionnaire-container">
     <h1>Gracias por completar el test!</h1>
-    <button on:click={submitAnswers}>Enviar respuesta</button>
+    {submitAnswers}
   </div>
 {/if}
 
