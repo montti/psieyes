@@ -6,6 +6,9 @@
   import { answers } from '../../lib/store.js';
   import { skipRageStore } from '$lib/store.js';
   import { goto } from '$app/navigation';
+  import { db } from '../../lib/firebase';
+  import { collection, addDoc,  serverTimestamp } from 'firebase/firestore';
+
   
   let currentQuestionIndex = 0;
   let isSubmitted = false;
@@ -24,8 +27,19 @@
   }
 
   function submitAnswers() {
-    console.log($answers);
-    goto('/thanks'); 
+    //console.log($answers);
+    const data = {
+        json: $answers,
+        timestamp: serverTimestamp(),
+    };
+    
+    addDoc(collection(db, "answers"), data)
+    .then((docRef) => {
+        goto('/thanks'); 
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+    });
   }
 
   function handleNextQuestion() {

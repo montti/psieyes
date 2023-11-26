@@ -23,7 +23,7 @@
   }
 
   img {
-    width: 75%;
+    width: 50%;
   }
 
   button {
