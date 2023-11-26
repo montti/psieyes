@@ -7,7 +7,7 @@
   import { skipRageStore } from '$lib/store.js';
   import { goto } from '$app/navigation';
   import { db } from '../../lib/firebase';
-  import { collection, addDoc,  serverTimestamp } from 'firebase/firestore';
+  import { collection, addDoc,  serverTimestamp } from '../../lib/firebase';
 
   
   let currentQuestionIndex = 0;
