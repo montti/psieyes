@@ -11,7 +11,7 @@
 	<img src="/images/monalisa.jpg" alt="Eyes of the Mona Lisa" />
 	<p>Este test pretende evaluar su capacidad para discernir emociones a través de la expresión de los ojos. Se le presentarán imágenes de pares de ojos junto a cuatro etiquetas emocionales. Su tarea consistirá en elegir cuál de las palabras disponibles describe mejor la emoción que refleja la mirada.</p>
 	
-  	<div style="overflow:scroll; height: 200px; width: 65%;">
+  	<div style="overflow:scroll; height: 200px; width: 75%;">
 		<h4>Consentimiento Informado de Participación en Estudio sobre la Empatía de los Humanos bajo Estados Alterados.</h4>
 		<p>Ha sido invitado a participar del estudio titulado "Medición de empatía a través de la etiquetación emocional de los ojos" conducido por Iván Montti, estudiante de pregrado de la Facultad de Ingeniería en la Universidad de Concepción. En el presente documento se explicarán factores clave para que pueda decidir si participar del Estudio. Si tiene alguna duda, puede comunicarse con el equipo de investigación utilizando la información de contacto al final de este documento.</p>
 		<p>El objetivo de este estudio es investigar la relación entre la empatía en estados tanto alterados como no alterados y la capacidad de etiquetar emociones en imágenes de ojos, para probar si los estados alterados cambian la empatía de la gente.</p>  
@@ -28,7 +28,7 @@
 		<p>En caso de tener dudas o inquietudes sobre la investigación y su participación, tanto antes de decidir si participar como después puede contactar con el equipo de investigación a través del siguiente/ o siguientes correo electrónico/s: montti@posteo.net, ccristinich2021@inf.udec.cl</p> 
 	</div>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>He leído la información proporcionada. Se me ha proporcionado el nombre de un investigador que puede ser contactado con facilidad con la información dada. He tenido la oportunidad de preguntar sobre ella y se me han contestado las preguntas que he realizado. Consiento desde mi libertad para participar en este estudio como sujeto de investigación y entiendo que tengo el derecho de retirarme del proceso en cualquier momento sin ningún tipo de consecuencia y/o efecto negativo sobre mi persona.</p>
 
 	<button on:click={() => goto('/question')}>Iniciar el test</button>
 </div>
@@ -37,7 +37,7 @@
 <style>
   .questionnaire-container {
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
   }
 
   img {
-  	width: 60%;
+  	width: 75%;
   }
 
   button {
