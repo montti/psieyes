@@ -20,7 +20,7 @@
 <style>
   .questionnaire-container {
     display: flex;
-    width: 50%;
+    width: 70%;
     margin: auto;
     flex-direction: column;
     align-items: center;
