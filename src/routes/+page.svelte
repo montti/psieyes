@@ -30,6 +30,8 @@
 
 	<p>He leído la información proporcionada. Se me ha proporcionado el nombre de un investigador que puede ser contactado con facilidad con la información dada. He tenido la oportunidad de preguntar sobre ella y se me han contestado las preguntas que he realizado. Consiento desde mi libertad para participar en este estudio como sujeto de investigación y entiendo que tengo el derecho de retirarme del proceso en cualquier momento sin ningún tipo de consecuencia y/o efecto negativo sobre mi persona.</p>
 
+<p><b>Si ya realizado este test, por favor no lo realice nuevamente.</b></p>
+  
 	<button on:click={() => goto('/question')}>Iniciar el test</button>
 </div>
 

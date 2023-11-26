@@ -25,7 +25,7 @@
 
   function submitAnswers() {
     console.log($answers);
-    //goto('/thank-you'); // Pagina de gracias
+    goto('/thanks'); 
   }
 
   function handleNextQuestion() {
@@ -47,8 +47,8 @@
   </div>
 {:else}
   <div class="questionnaire-container">
-    <h1>Gracias por completar el test!</h1>
-    {submitAnswers}
+    <h1>Fin!</h1>
+    <button on:click={submitAnswers}>Enviar respuestas</button>
   </div>
 {/if}
 
