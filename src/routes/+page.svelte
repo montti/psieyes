@@ -11,8 +11,8 @@
 	<img src="/images/monalisa.jpg" alt="Eyes of the Mona Lisa" />
 	<p>Este test pretende evaluar su capacidad para discernir emociones a través de la expresión de los ojos. Se le presentarán imágenes de pares de ojos junto a cuatro etiquetas emocionales. Su tarea consistirá en elegir cuál de las palabras disponibles describe mejor la emoción que refleja la mirada.</p>
 	
-  	<div style="overflow:scroll; height: 200px; width: 60%;">
-		<h1>Consentimiento Informado de Participación en Estudio sobre la Empatía de los Humanos bajo Estados Alterados.</h1>
+  	<div style="overflow:scroll; height: 200px; width: 65%;">
+		<h4>Consentimiento Informado de Participación en Estudio sobre la Empatía de los Humanos bajo Estados Alterados.</h4>
 		<p>Ha sido invitado a participar del estudio titulado "Medición de empatía a través de la etiquetación emocional de los ojos" conducido por Iván Montti, estudiante de pregrado de la Facultad de Ingeniería en la Universidad de Concepción. En el presente documento se explicarán factores clave para que pueda decidir si participar del Estudio. Si tiene alguna duda, puede comunicarse con el equipo de investigación utilizando la información de contacto al final de este documento.</p>
 		<p>El objetivo de este estudio es investigar la relación entre la empatía en estados tanto alterados como no alterados y la capacidad de etiquetar emociones en imágenes de ojos, para probar si los estados alterados cambian la empatía de la gente.</p>  
 		<p>La participación en este estudio implica responder una serie de cuestionarios y etiquetar la emoción que identifique en la imagenes de ojos con las emociones dadas, desde la presente página web, que tiene un tiempo estimado de 10 a 15 minutos. Cabe recalcar que puede abandonar el estudio en cualquier momento.</p>  
