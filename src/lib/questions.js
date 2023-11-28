@@ -126,7 +126,7 @@ export const questions = [
     type: 'image',
     question: '¿Cual es la emoción de esta mirada? 13/37',
     image: '/images/images13.jpg',
-    options: ['Indiferente', 'Averagonzado', 'Escéptico', 'Desanimado'],
+    options: ['Indiferente', 'Avergonzado', 'Escéptico', 'Desanimado'],
   },
   {
     type: 'image',
@@ -180,7 +180,7 @@ export const questions = [
     type: 'image',
     question: '¿Cual es la emoción de esta mirada? 22/37',
     image: '/images/images22.jpg',
-    options: ['Averagonzado', 'Fantaseando', 'Confundido', 'Alarmado'],
+    options: ['Avergonzado', 'Fantaseando', 'Confundido', 'Alarmado'],
   },
   {
     type: 'image',
@@ -240,7 +240,7 @@ export const questions = [
     type: 'image',
     question: '¿Cual es la emoción de esta mirada? 32/37',
     image: '/images/images32.jpg',
-    options: ['Averagonzado', 'Seguro', 'Bromeando', 'Desanimado'],
+    options: ['Avergonzado', 'Seguro', 'Bromeando', 'Desanimado'],
   },
   {
     type: 'image',
@@ -252,7 +252,7 @@ export const questions = [
     type: 'image',
     question: '¿Cual es la emoción de esta mirada? 34/37',
     image: '/images/images34.jpg',
-    options: ['Averagonzado', 'Culpable', 'Fantaseoso', 'Intranquilo'],
+    options: ['Avergonzado', 'Culpable', 'Fantaseoso', 'Intranquilo'],
   },
   {
     type: 'image',
@@ -273,3 +273,4 @@ export const questions = [
     options: ['Avergonzado', 'Nervioso', 'Desconfiado', 'Indeciso'],
   },
 ];
+
